@@ -1,0 +1,75 @@
+{
+  "TOOLS":[
+    {
+      "NAME": "/help",
+      "TYPE_MESS": ["private","chat"],
+      "BLOCKED": 0,
+      "LIST_ACTIVE": [],
+      "FAQ": "/help - помощь голове",
+      "ADDICTIVE": "/help [function] - общий список команд или помощь по команде\nПример: /help parse",
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\help\\main.py"
+    },
+    {
+      "NAME": "/adddev",
+      "TYPE_MESS": ["private","chat"],
+      "BLOCKED": 1,
+      "LIST_ACTIVE": [],
+      "FAQ": "/adddev - добавление в DEV",
+      "ADDICTIVE": "/adddev [user_id/reply/forward] - добавление в DEV (дополняется)",
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\adddev\\main.py"
+    },
+    {
+      "NAME": "/info",
+      "LIST_ACTIVE": [],
+      "FAQ": "/info - информация о тэгах и пользователях",
+      "ADDICTIVE": "/info [args] [name]- информация по args:\n 'tags'/'tag *tag*'/",
+      "TYPE_MESS": ["private","chat"],
+      "BLOCKED": 0,
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\info\\main.py"
+    },
+    {
+      "NAME": "/parse",
+      "LIST_ACTIVE": [],
+      "BLOCKED": 0,
+      "FAQ": "/parse - парсер Dispace",
+      "TYPE_MESS": ["private","chat"],
+      "ADDICTIVE": "/parse [args] - прямой парсер Dispace, основанный на запросе к сайту, args:\n'add *login* *password* - доступно только в лс'/'activetests'/'tests'/'test *id* *code*'",
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\parse\\main.py"
+    },
+    {
+      "NAME": "/all",
+      "FAQ": "/all - спам all",
+      "BLOCKED": 1,
+      "LIST_ACTIVE": [],
+      "TYPE_MESS": ["chat"],
+      "ADDICTIVE": "/all *number* - спам all",
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\parse\\main.py"
+    },
+    {
+      "NAME": "/set",
+      "LIST_ACTIVE": [],
+      "BLOCKED": 0,
+      "FAQ": "/set - установка тэга",
+      "TYPE_MESS": ["private","chat"],
+      "ADDICTIVE": "/set *tag* - установка тэга",
+      "BLOCKED": 0,
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\set\\main.py"
+    },
+    {
+      "NAME": "/wakeup",
+      "FAQ": "/wakeup - пинг тега",
+      "BLOCKED": 0,
+      "LIST_ACTIVE": [],
+      "TYPE_MESS": ["chat"],
+      "ADDICTIVE": "/wakeup *tag* - пинг пользователей по тэгу",
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\wakeup\\main.py"
+    }
+  ]
+}

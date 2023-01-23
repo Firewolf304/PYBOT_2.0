@@ -1,0 +1,11 @@
+For active func add this json module with path in info.json:
+    {
+      "NAME": "/all",
+      "FAQ": "All hueta",
+      "BLOCKED": 0,
+      "LIST_ACTIVE": [],
+      "TYPE_MESS": ["private","chat"],
+      "ARGS": [""],
+      "TYPES": ["vk"],
+      "PATH": "tool\\modules\\parse\\main.py"
+    }
